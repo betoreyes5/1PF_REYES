@@ -1,0 +1,33 @@
+<div class="container-fluid">
+
+    <div class="d-flex">
+        <div class="p-4 flex-grow-1"><span style="color: #AD1457; font-size: 24px;">Lista de Cursos</span></div>
+        <div class="p-2">
+            <button mat-mini-fab color="warn"  >
+                <mat-icon aria-hidden="false" fontIcon="add"></mat-icon>
+              </button>
+        </div>
+        <div class="p-3"><span style="color: #E53935; font-size: 20px;">Agregar</span> </div>
+      </div>
+
+</div>
+
+<div>
+
+    <mat-card class="curso-card" *ngFor="let lista of lsCursos">
+
+        <mat-card-title>{{ lista.nombre }}</mat-card-title>
+        <mat-card-subtitle>{{ lista.folio }}</mat-card-subtitle>
+        <mat-card-content>       
+          <p>{{ lista.descripcion }}</p>
+        </mat-card-content>
+
+        <mat-card-actions>
+          <button mat-button>LIKE</button>
+          <button mat-button>SHARE</button>
+        </mat-card-actions>
+
+      </mat-card>      
+
+</div>
+
