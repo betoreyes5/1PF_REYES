@@ -8,8 +8,9 @@ import { AlumnosComponent } from './components/alumnos/alumnos.component';
 import { ClasesComponent } from './components/clases/clases.component';
 import { CursosComponent } from './components/cursos/cursos.component';
 import { PadreMainComponent } from './components/padre-main/padre-main.component';
-import { AgregarAlumnosComponent } from './components/agregar-alumnos/agregar-alumnos.component';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms'
+import { AgregarAlumnosComponent } from './components/alumnos/acciones-alumnos/agregar-alumnos/agregar-alumnos.component';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { EditarAlumnosComponent } from './components/alumnos/acciones-alumnos/editar-alumnos/editar-alumnos.component'
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms'
     ClasesComponent,
     CursosComponent,
     PadreMainComponent,
-    AgregarAlumnosComponent
+    AgregarAlumnosComponent,
+    EditarAlumnosComponent
   ],
   imports: [
     BrowserModule,
